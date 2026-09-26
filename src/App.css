@@ -30,3 +30,8 @@ button {
 p {
     color: #000000;
 }
+
+.questions {
+  display: flex;
+  justify-content: center;
+}
