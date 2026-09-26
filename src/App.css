@@ -18,6 +18,9 @@ body {
 
 button {
     font-family: 'NotoSerif', sans-serif;
+    background-color: #fefefe;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 p {
