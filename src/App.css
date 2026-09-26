@@ -32,7 +32,11 @@ p {
     color: #000000;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .questions {
-  display: flex;
-  justify-content: center;
+    margin-right: 150px; /* Shifts the centered content 20px to the right */
 }
