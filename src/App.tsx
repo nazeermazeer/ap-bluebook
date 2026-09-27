@@ -2,6 +2,10 @@ import "./App.css";
 
 function App() {
   return (
+    <>
+    <header>
+        <p> hi </p>
+    </header>
     <main>
         <div className="questions">
             <p>Hierarchical diffusion is defined as the movement of a culture trait</p>
@@ -12,6 +16,7 @@ function App() {
             <button>that affects all places simultaneously regardless of their location</button>
         </div>
     </main>
+    </>
   );
 }
 
