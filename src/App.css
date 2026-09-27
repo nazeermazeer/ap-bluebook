@@ -11,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #f6f6f6;
@@ -50,6 +57,9 @@ main {
 }
 
 header {
+    font-family: 'Roboto';
     background-color: #e6edf8;
+    color: #000000;
     width: 100%;
+    text-align: center;
 }
