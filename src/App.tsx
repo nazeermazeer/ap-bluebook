@@ -4,7 +4,8 @@ function App() {
   return (
     <>
     <header>
-        <p> hi </p>
+        <h2>0:00</h2>
+        <button>Hide</button>
     </header>
     <main>
         <div className="questions">
