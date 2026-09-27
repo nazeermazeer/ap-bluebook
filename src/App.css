@@ -42,3 +42,8 @@ main {
 .questions {
     margin-right: 200px;
 }
+
+header {
+    background-color: #e6edf8;
+    width: 100%;
+}
