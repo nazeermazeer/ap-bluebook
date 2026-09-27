@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./assets/fonts/Roboto-Bold.ttf') format('opentype');
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -30,7 +30,7 @@ body {
     font-size: 16px;
 }
 
-button {
+.answer {
     font-family: 'NotoSerif', sans-serif;
     font-size: 16px;
     background-color: #fefefe;
@@ -62,4 +62,16 @@ header {
     color: #000000;
     width: 100%;
     text-align: center;
+}
+
+.hidebutton {
+    font-family: 'Roboto';
+    background: none;
+    border: 1px solid black;
+    padding: 3px 15px;
+    border-radius: 100px;
+}
+
+.timer {
+    margin-bottom: 1px;
 }
