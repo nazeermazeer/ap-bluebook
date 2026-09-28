@@ -21,6 +21,10 @@ function App() {
             <button className="answer">that affects all places simultaneously regardless of their location</button>
         </div>
     </main>
+    <footer>
+        <h2 className="timer">0:00</h2>
+        <button className="hidebutton">Hide</button>
+    </footer>
     </>
   );
 }
