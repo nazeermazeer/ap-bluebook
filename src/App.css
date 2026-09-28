@@ -43,8 +43,9 @@ body {
     text-align: left;
 }
 
-p {
+.question {
     color: #000000;
+    margin-bottom: 20px;
 }
 
 main {
@@ -63,6 +64,7 @@ header {
     width: 100%;
     text-align: center;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 .hidebutton {
