@@ -10,6 +10,7 @@ function App() {
     <main>
         <div className="questions">
             <div className="toolbar">
+                <p>6</p>
                 <p>Mark for Review</p>
             </div>
             <p className="question">Hierarchical diffusion is defined as the movement of a culture trait</p>
