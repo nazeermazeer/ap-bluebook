@@ -77,8 +77,12 @@ header {
 }
 
 .toolbar {
+    font-family: 'Roboto';
+    display: flex;
     width: 700px; 
     height: 30px; 
     background-color: #f0f0f0;
+    color: #000000;
     margin-bottom: 15px;
+    align-items: center;
 }
