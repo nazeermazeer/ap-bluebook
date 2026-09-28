@@ -79,3 +79,10 @@ header {
     margin-bottom: 1px;
     padding: 10px;
 }
+
+.toolbar {
+    width: 700px; 
+    height: 30px; 
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+}
