@@ -94,3 +94,15 @@ header {
     margin-right: 5px;
 
 }
+
+footer {
+    font-family: 'Roboto';
+    background-color: #e6edf8;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
