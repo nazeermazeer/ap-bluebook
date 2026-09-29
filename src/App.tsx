@@ -22,8 +22,7 @@ function App() {
         </div>
     </main>
     <footer>
-        <h2 className="timer">0:00</h2>
-        <button className="hidebutton">Hide</button>
+        <h2 className="name">Jane Doe</h2>
     </footer>
     </>
   );
