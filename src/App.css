@@ -106,3 +106,11 @@ footer {
     left: 0;
     width: 100%;
 }
+
+.name {
+    margin-bottom: 1px;
+    padding: 10px;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 20px;
+}
