@@ -126,4 +126,5 @@ footer {
     background-color: #000000;
     color: #f0f0f0;
     justify-self: center; 
+    border-radius: 10px;
 }
