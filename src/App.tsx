@@ -23,6 +23,7 @@ function App() {
     </main>
     <footer>
         <h2 className="name">Jane Doe</h2>
+        <h2 className="totals">Question 6 of 13</h2>
     </footer>
     </>
   );
