@@ -97,7 +97,8 @@ header {
 
 footer {
     font-family: 'Roboto';
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     background-color: #e6edf8;
     color: #000000;
     width: 100%;
@@ -120,6 +121,5 @@ footer {
     margin-bottom: 1px;
     padding: 10px;
     text-align: center;
-    margin-left: 50px;
     font-size: 20px;
 }
