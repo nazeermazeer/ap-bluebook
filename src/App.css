@@ -130,3 +130,14 @@ footer {
     justify-self: center; 
     border-radius: 10px;
 }
+
+.nav-question {
+    background-color: #324dc7;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    justify-self: right;
+    color: #f0f0f0;
+    border: 0px;
+}
