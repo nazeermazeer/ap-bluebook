@@ -114,6 +114,11 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+
+    background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
+    background-position: top;
+    background-size: 40px 3px;
+    background-repeat: repeat-x;
 }
 
 .name {
