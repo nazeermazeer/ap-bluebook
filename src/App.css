@@ -61,6 +61,11 @@ header {
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
+
+    background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 40px 3px;
+    background-repeat: repeat-x;
 }
 
 .hidebutton {
@@ -142,4 +147,8 @@ footer {
     border: 0px;
     border-radius: 30px;
     font-size: 20px;
+}
+
+.border {
+
 }

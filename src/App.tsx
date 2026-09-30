@@ -6,6 +6,7 @@ function App() {
     <header>
         <h2 className="timer">0:00</h2>
         <button className="hidebutton">Hide</button>
+        <div className="border"></div>
     </header>
     <main>
         <div className="questions">
