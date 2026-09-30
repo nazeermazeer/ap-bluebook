@@ -92,6 +92,7 @@ header {
     color: #000000;
     margin-bottom: 15px;
     align-items: center;
+    margin: 0px;
 }
 
 .toolbar p:nth-child(1){
@@ -154,4 +155,14 @@ footer {
     border: 0px;
     border-radius: 30px;
     font-size: 20px;
+}
+
+.toolbar-border {
+    height: 5px;
+    margin-bottom: 10px;
+
+    background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
+    background-position: 0px 0px;
+    background-size: 40px 3px;
+    background-repeat: repeat-x;
 }
