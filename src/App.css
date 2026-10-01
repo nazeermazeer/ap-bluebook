@@ -62,7 +62,7 @@ header {
     padding: 10px;
     margin-bottom: 30px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr;
     grid-template-columns: 30% 40%;
 
     background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
