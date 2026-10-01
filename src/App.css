@@ -71,12 +71,18 @@ header {
     background-repeat: repeat-x;
 }
 
-.section-count {
+.section-count, .directions {
     grid-row: 1;
     justify-self: left;
     text-align: left;
     margin-left: 30px;
     margin-top: 5px;
+}
+
+.directions {
+    grid-row: 2;
+    margin-top: 0px;
+    font-size: 16px;
 }
 
 .hide-button {
