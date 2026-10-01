@@ -61,6 +61,9 @@ header {
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 40%;
 
     background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
     background-position: bottom;
@@ -68,19 +71,30 @@ header {
     background-repeat: repeat-x;
 }
 
+.section-count {
+    grid-row: 1;
+    justify-self: left;
+    text-align: left;
+}
+
 .hidebutton {
+    grid-row: 2;
+    grid-column: 2;
     font-family: 'Roboto';
     background: none;
     border: 1px solid black;
-    padding: 3px 10px;
+    padding: 5px 10px;
     margin-bottom: 6px;
     border-radius: 100px;
+    justify-self: center;
 }
 
 .timer {
     margin-bottom: 1px;
     padding-bottom: 10px;
     margin-top: 5px;
+    grid-row: 1;
+    justify-self: center;
 }
 
 .toolbar {
