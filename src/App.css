@@ -85,8 +85,9 @@ header {
     font-family: 'Roboto';
     background: none;
     border: 1px solid black;
-    padding: 5px 10px;
     margin-bottom: 6px;
+    width: 60px;
+    height: 20px;
     border-radius: 100px;
     justify-self: center;
 }
