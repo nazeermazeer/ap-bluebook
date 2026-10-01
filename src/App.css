@@ -75,6 +75,8 @@ header {
     grid-row: 1;
     justify-self: left;
     text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
 }
 
 .hidebutton {
