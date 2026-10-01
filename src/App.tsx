@@ -6,7 +6,7 @@ function App() {
     <header>
         <h2 className="section-count">Section I</h2>
         <h2 className="timer">0:00</h2>
-        <button className="hidebutton">Hide</button>
+        <button className="hide-button">Hide</button>
     </header>
     <main>
         <div className="questions">
