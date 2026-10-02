@@ -12,8 +12,8 @@
 }
 
 @font-face {
-  font-family: 'NotoSans';
-  src: url('./assets/fonts/NotoSans-VariableFont.ttf') format('opentype');
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
@@ -198,7 +198,8 @@ footer {
 }
 
 .answer-bubble {
-    font-family: "NotoSans";
+    font-family: "Roboto";
+    font-weight: 600;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -206,7 +207,7 @@ footer {
     height: 30px;
     border: 2px solid #444444;
     color: #444444;
-    padding: 1px 8px;
+    padding: 3px 8px;
     border-radius: 50%;
     margin-right: 17px;
 }
