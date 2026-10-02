@@ -204,7 +204,8 @@ footer {
     align-items: center;
     width: 30px;
     height: 30px;
-    border: 1px solid #000000;
+    border: 1px solid #444444;
+    color: #444444;
     padding: 2px 9px;
     font-weight: bold;
     border-radius: 50%;
