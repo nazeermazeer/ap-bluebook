@@ -189,3 +189,8 @@ footer {
     background-size: 40px 3px;
     background-repeat: repeat-x;
 }
+
+.answer-bubble {
+    border: 2px solid #333333; 
+    border-radius: 100%;
+}
