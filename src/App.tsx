@@ -1,4 +1,6 @@
 import "./App.css";
+import "./icons.tsx";
+import ReviewIcon from "./icons.tsx";
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <div className="questions">
             <div className="toolbar">
                 <p>6</p>
+                <ReviewIcon />
                 <p>Mark for Review</p>
             </div>
             <div className="toolbar-border"></div>
