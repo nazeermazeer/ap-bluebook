@@ -212,10 +212,30 @@ footer {
     background-repeat: repeat-x;
 }
 
+.answer-choices {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
 .answer-bubble {
     font-family: "Roboto";
     font-weight: 600;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #444444;
+    color: #444444;
+    padding: 3px 8px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.answer-eliminator {
+    font-family: "Roboto";
+    font-weight: 600;
+    display: inline;
     justify-content: center;
     align-items: center;
     width: 30px;
