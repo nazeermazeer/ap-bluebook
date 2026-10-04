@@ -1,5 +1,4 @@
 import "./App.css";
-import "./icons.tsx";
 import ReviewIcon from "./icons.tsx";
 
 function App() {
