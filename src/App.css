@@ -242,11 +242,11 @@ footer {
     background-color: #324dc7;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
     width: 100px;
     justify-self: right;
     color: #f0f0f0;
     border: 0px;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
