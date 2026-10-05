@@ -24,7 +24,7 @@ function App() {
             <button className="answer"><span className="answer-bubble">B</span>from a hearth or place of origin outward in all directions</button><span className="answer-eliminator">B</span>
             <button className="answer"><span className="answer-bubble">C</span>from more influential places to less influential places</button><span className="answer-eliminator">C</span>
             <button className="answer"><span className="answer-bubble">D</span>between places that are in close proximity to a line of transport</button><span className="answer-eliminator">D</span>
-            <button className="answer"><span className="answer-bubble">E</span>that affects all places simultaneously regardless of their location</button><span className="answer-eliminator">C</span>
+            <button className="answer"><span className="answer-bubble">E</span>that affects all places simultaneously regardless of their location</button><span className="answer-eliminator">E</span>
             </div>
         </div>
     </main>
