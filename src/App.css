@@ -75,7 +75,7 @@ header {
     width: 100%;
     text-align: center;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-rows: 1fr 0.4fr;
     grid-template-columns: 30% 40%;
