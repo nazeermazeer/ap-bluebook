@@ -243,6 +243,7 @@ footer {
     border-radius: 50%;
     margin-top: 10px;
     margin-left: 17px;
+    text-decoration: line-through;
 }
 
 .review-icon {
