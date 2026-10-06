@@ -236,28 +236,6 @@ footer {
     border-radius: 10px;
 }
 
-.totals {
-    position: relative;
-    display: inline-block;
-}
-
-.totals a {
-    text-decoration: none;
-    color: #f0f0f0;
-    padding-right: 20px; 
-}
-
-.totals::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    border: 5px solid transparent;
-    border-top-color: #ffffff;
-}
-
 .nav-question {
     font-family: "Roboto";
     font-weight: 500;
