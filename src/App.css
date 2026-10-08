@@ -198,11 +198,11 @@ main {
 .answer-eliminator::after {
   content: "";
   position: absolute;
-  left: -10px;  /* Adjust how far past the left side the line goes */
-  right: -10px; /* Adjust how far past the right side the line goes */
+  left: -5px;  
+  right: -5px;
   top: 50%;
-  height: 2px;  /* Thickness of the line */
-  background-color: currentColor; /* Matches text color, or use a specific color like red */
+  height: 1.5px; 
+  background-color: currentColor; 
   transform: translateY(-50%);
 }
 
