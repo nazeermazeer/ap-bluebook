@@ -1,5 +1,5 @@
 import "./App.css";
-import ReviewIcon from "./icons.tsx";
+import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
                 <p>6</p>
                 <ReviewIcon />
                 <p>Mark for Review</p>
+                <AnswerEliminatorIcon />
             </div>
             <div className="toolbar-border"></div>
             <p className="question">Hierarchical diffusion is defined as the movement of a culture trait</p>
