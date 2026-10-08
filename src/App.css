@@ -129,6 +129,11 @@ main {
     margin-right: 5px;
 }
 
+.answer-eliminator-icon {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
 .toolbar-border {
     height: 5px;
     margin-bottom: 10px;
