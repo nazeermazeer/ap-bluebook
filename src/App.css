@@ -192,6 +192,18 @@ main {
     margin-top: 10px;
     margin-left: 23px;
     text-decoration: line-through;
+    position: relative;
+}
+
+.answer-eliminator::after {
+  content: "";
+  position: absolute;
+  left: -10px;  /* Adjust how far past the left side the line goes */
+  right: -10px; /* Adjust how far past the right side the line goes */
+  top: 50%;
+  height: 2px;  /* Thickness of the line */
+  background-color: currentColor; /* Matches text color, or use a specific color like red */
+  transform: translateY(-50%);
 }
 
 
