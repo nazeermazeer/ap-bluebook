@@ -9,6 +9,7 @@ function App() {
         <h2 className="directions">Directions</h2>
         <h2 className="timer">0:00</h2>
         <button className="hide-button">Hide</button>
+        <button className="more-button"></button>
     </header>
     <main>
         <div className="questions">

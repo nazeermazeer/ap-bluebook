@@ -50,7 +50,7 @@ header {
     margin-bottom: 50px;
     display: grid;
     grid-template-rows: 1fr 0.4fr;
-    grid-template-columns: 30% 40%;
+    grid-template-columns: 30% 40% 55%;
 
     background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
     background-position: bottom;
@@ -94,6 +94,21 @@ header {
     height: 20px;
     border-radius: 100px;
     justify-self: center;
+}
+
+.more-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-button::after {
+  content: '\2807'; 
+  font-size: 24px;
+  color: #333;
 }
 
 main {
