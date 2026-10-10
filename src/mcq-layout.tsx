@@ -1,7 +1,7 @@
 import "./mcq-layout.css";
 import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 
-function App() {
+export default function MCQ_Layout() {
   return (
     <>
     <header>
@@ -40,5 +40,3 @@ function App() {
     </>
   );
 }
-
-export default App;
