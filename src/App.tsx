@@ -1,5 +1,5 @@
 import "./App.css";
-import {ReviewIcon, AnswerEliminatorIcon, HighlighterIcon} from "./icons.tsx";
+import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
         <h2 className="timer">0:00</h2>
         <button className="hide-button">Hide</button>
         <button className="more-button"></button>
-        <HighlighterIcon />
         <h2 className="more-label">More</h2>
     </header>
     <main>
