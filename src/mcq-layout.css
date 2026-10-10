@@ -50,7 +50,7 @@ header {
     margin-bottom: 50px;
     display: grid;
     grid-template-rows: 60% 50%;
-    grid-template-columns: 30% 40% 55%;
+    grid-template-columns: 40% 20% 40%;
 
     background-image: linear-gradient(to right, black 95%, rgba(255,255,255,0) 0%);
     background-position: bottom;
@@ -96,14 +96,15 @@ header {
     justify-self: center;
 }
 
-.more-button {
+.more-button, .more-label {
     grid-row: 1;
     grid-column: 3;
     background: none;
     border: none;
     display: inline-flex;
     align-items: end;
-    justify-content: center;
+    justify-content: right;
+    margin-right: 30px;
 }
 
 .more-button::after {
@@ -115,7 +116,8 @@ header {
 .more-label {
     grid-row: 2;
     margin-top: 0px;
-    margin-right: 12px;
+    margin-right: 25px;
+    align-items: baseline;
     font-size: 16px;
 }
 
@@ -130,7 +132,7 @@ main {
     font-family: 'Roboto';
     font-weight: 400;
     display: flex;
-    width: 700px; 
+    width: 100%; 
     height: 30px; 
     background-color: #f0f0f0;
     color: #000000;
