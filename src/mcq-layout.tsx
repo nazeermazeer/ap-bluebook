@@ -1,4 +1,4 @@
-import "./App.css";
+import "./mcq-layout.css";
 import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 
 function App() {
