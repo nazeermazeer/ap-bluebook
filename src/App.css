@@ -111,6 +111,15 @@ header {
   color: #333;
 }
 
+.more-label {
+    font-weight: 500;
+    align-content: right;
+    
+    grid-row: 2;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
 main {
     display: flex;
     justify-content: center;

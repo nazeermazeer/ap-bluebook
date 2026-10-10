@@ -10,6 +10,7 @@ function App() {
         <h2 className="timer">0:00</h2>
         <button className="hide-button">Hide</button>
         <button className="more-button"></button>
+        <h2 className="more-label">More</h2>
     </header>
     <main>
         <div className="questions">
