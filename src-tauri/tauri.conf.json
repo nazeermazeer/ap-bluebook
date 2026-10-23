@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "ap-bluebook",
+  "productName": "AP Bluebook",
   "version": "0.1.0",
   "identifier": "com.nazeermazeer.ap-bluebook",
   "build": {
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "ap-bluebook",
+        "title": "AP Bluebook",
         "maximized": true
       }
     ],
