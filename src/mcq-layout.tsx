@@ -16,7 +16,7 @@ export default function MCQ_Layout() {
     <main>
         <div className="questions">
             <div className="toolbar">
-                <p>6</p>
+                <p>{getData()["number"]}</p>
                 <ReviewIcon />
                 <p>Mark for Review</p>
                 <AnswerEliminatorIcon />
