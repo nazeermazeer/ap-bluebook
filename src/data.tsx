@@ -12,6 +12,6 @@ const question: Question = {
     correctAnswerIndex: 2
 }
 
-export function getData() {
+export function getQuestionData() {
     return question;
 }

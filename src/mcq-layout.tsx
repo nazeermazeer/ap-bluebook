@@ -1,6 +1,6 @@
 import "./mcq-layout.css";
 import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
-import {getData} from "./data.tsx";
+import {getQuestionData} from "./data.tsx";
 
 export default function MCQ_Layout() {
   return (
@@ -16,7 +16,7 @@ export default function MCQ_Layout() {
     <main>
         <div className="questions">
             <div className="toolbar">
-                <p>{getData()["number"]}</p>
+                <p>{getQuestionData()["number"]}</p>
                 <ReviewIcon />
                 <p>Mark for Review</p>
                 <AnswerEliminatorIcon />
