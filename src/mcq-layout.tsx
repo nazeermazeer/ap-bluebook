@@ -2,7 +2,7 @@ import "./mcq-layout.css";
 import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 import {getQuestionData} from "./data.tsx";
 
-const data = getQuestionData()[1];
+const data = getQuestionData()[0];
 
 export default function MCQ_Layout() {
   return (
