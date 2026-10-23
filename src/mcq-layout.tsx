@@ -46,7 +46,7 @@ export default function MCQ_Layout() {
                 <button className="nav-question">Back</button>
             )} 
             {data["number"] != numquestions && (
-                <button className="nav-question" onClick={() => setQuestion(data["number"] + 1)}>Next</button>
+                <button className="nav-question" onClick={() => setQuestion(question + 1)}>Next</button>
             )} 
         </footer>
         </>
