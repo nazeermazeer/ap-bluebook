@@ -1,5 +1,6 @@
 import "./mcq-layout.css";
 import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
+import {getData} from "./data.tsx";
 
 export default function MCQ_Layout() {
   return (
