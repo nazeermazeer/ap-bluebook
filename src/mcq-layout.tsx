@@ -1,11 +1,15 @@
 import "./mcq-layout.css";
 import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 import {getQuestionData} from "./data.tsx";
+import { useState } from "react";
 
-const data = getQuestionData()[0];
+// let data = getQuestionData()[0];
 const numquestions = getQuestionData().length;
 
 export default function MCQ_Layout() {
+    const [question, setQuestion] = useState(0);
+    let data = getQuestionData()[question];
+
     return (
         <>
         <header>
@@ -42,7 +46,7 @@ export default function MCQ_Layout() {
                 <button className="nav-question">Back</button>
             )} 
             {data["number"] != numquestions && (
-                <button className="nav-question">Next</button>
+                <button className="nav-question" onClick={() => setQuestion(data["number"] + 1)}>Next</button>
             )} 
         </footer>
         </>
