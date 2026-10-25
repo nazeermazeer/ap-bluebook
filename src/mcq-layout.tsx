@@ -3,7 +3,6 @@ import {ReviewIcon, AnswerEliminatorIcon} from "./icons.tsx";
 import {getQuestionData} from "./data.tsx";
 import { useState } from "react";
 
-// let data = getQuestionData()[0];
 const numquestions = getQuestionData().length;
 
 export default function MCQ_Layout() {
