@@ -41,7 +41,7 @@ export default function MCQ_Layout() {
         </main>
         <footer>
             <h2 className="name">Jane Doe</h2>
-            <h2 className="totals">Question 6 of 13</h2>
+            <h2 className="totals">Question {question + 1} of {numquestions}</h2>
             {data["number"] != 1 ? (
                 <button className="nav-question" onClick={() => setQuestion(question - 1)}>Back</button>
             ) : (
