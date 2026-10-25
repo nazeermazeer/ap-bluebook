@@ -13,6 +13,8 @@ export default function MCQ_Layout() {
 
     const [answerEliminator, setAnswerEliminator] = useState(true);
 
+    const [answersEliminated, setAnswersEliminated] = useState({ a: false, b: false, c: false, d: false, e: false});
+
     const [markForReview, setMarkForReview] = useState(false);
 
     return (
@@ -40,21 +42,21 @@ export default function MCQ_Layout() {
                 <div className="toolbar-border"></div>
                     <p className="question">{data["question"]}</p>
                 <div className={answerEliminator ? "answer-choices-with-eliminators" : "answer-choices-without-eliminators"}>
-                    <button className="answer">
+                    <button className={answersEliminated.a == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">A</span>{data["options"][0]}
-                    </button>{answerEliminator && <button className="answer-eliminator">A</button>}
-                    <button className="answer">
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: true, b: false, c: false, d: false, e: false})}>A</button>}
+                    <button className={answersEliminated.b == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">B</span>{data["options"][1]}
-                    </button>{answerEliminator && <button className="answer-eliminator">B</button>}
-                    <button className="answer">
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: true, c: false, d: false, e: false})}>B</button>}
+                    <button className={answersEliminated.c == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">C</span>{data["options"][2]}
-                    </button>{answerEliminator && <button className="answer-eliminator">C</button>}
-                    <button className="answer">
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: false, c: true, d: false, e: false})}>C</button>}
+                    <button className={answersEliminated.d == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">D</span>{data["options"][3]}
-                    </button>{answerEliminator && <button className="answer-eliminator">D</button>}
-                    <button className="answer">
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: false, c: false, d: true, e: false})}>D</button>}
+                    <button className={answersEliminated.e == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">E</span>{data["options"][4]}
-                    </button>{answerEliminator && <button className="answer-eliminator">E</button>}
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: false, c: false, d: false, e: true})}>E</button>}
                 </div>
             </div>
         </main>

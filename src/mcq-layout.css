@@ -212,6 +212,20 @@ main {
     text-align: left;
 }
 
+.answer-eliminated {
+    font-family: 'NotoSerif', sans-serif;
+    font-size: 16px;
+    background-color: #fefefe;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    text-decoration: line-through;
+}
+
 
 .answer-bubble {
     font-family: "Roboto";
