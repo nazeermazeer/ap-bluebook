@@ -10,13 +10,15 @@ export default function MCQ_Layout() {
     const [question, setQuestion] = useState(0);
     let data = getQuestionData()[question];
 
+    const [timerHidden, setTimerHidden] = useState(false);
+
     return (
         <>
         <header>
             <h2 className="section-count">Section I</h2>
             <h2 className="directions">Directions</h2>
-            <h2 className="timer">0:00</h2>
-            <button className="hide-button">Hide</button>
+            <h2 className="timer">{timerHidden ? '-:--' : '0:00'}</h2>
+            <button className="hide-button" onClick={() => setTimerHidden(prev => !prev)}>Hide</button>
             <button className="more-button"></button>
             <h2 className="more-label">More</h2>
         </header>
