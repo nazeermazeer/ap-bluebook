@@ -258,6 +258,20 @@ main {
     position: relative;
 }
 
+.answer-eliminator-undo {
+    display: grid;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 16px;
+    border: 0px;
+    background: transparent;
+    color: #000000;
+    position: relative;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
 .answer-eliminator::after {
   content: "";
   position: absolute;

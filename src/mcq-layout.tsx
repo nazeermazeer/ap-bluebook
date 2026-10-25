@@ -44,7 +44,7 @@ export default function MCQ_Layout() {
                 <div className={answerEliminator ? "answer-choices-with-eliminators" : "answer-choices-without-eliminators"}>
                     <button className={answersEliminated.a == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">A</span>{data["options"][0]}
-                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, a: !prev.a}))}>A</button>}
+                    </button>{answerEliminator && <button className={answersEliminated.a == true ? "answer-eliminator-undo" : "answer-eliminator"} onClick={() => setAnswersEliminated(prev => ({...prev, a: !prev.a}))}>{answersEliminated.a == true ? "Undo" : "A"}</button>}
                     <button className={answersEliminated.b == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">B</span>{data["options"][1]}
                     </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, b: !prev.b}))}>B</button>}
