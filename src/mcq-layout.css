@@ -94,6 +94,7 @@ header {
     height: 20px;
     border-radius: 100px;
     justify-self: center;
+    cursor: pointer;
 }
 
 .more-button, .more-label {
