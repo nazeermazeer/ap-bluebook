@@ -158,7 +158,7 @@ main {
     margin-right: 5px;
 }
 
-.answer-eliminator-icon {
+.answer-eliminator-icon-selected, .answer-eliminator-icon-unselected {
     margin-left: auto;
     margin-right: 5px;
 }
