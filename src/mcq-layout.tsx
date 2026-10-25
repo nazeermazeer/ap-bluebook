@@ -27,7 +27,9 @@ export default function MCQ_Layout() {
             <div className="questions">
                 <div className="toolbar">
                     <p>{data["number"]}</p>
-                    <ReviewIconUnselected />
+                    <button className="review-icon">
+                        <ReviewIconUnselected />
+                    </button>
                     <p>Mark for Review</p>
                     <button className="answer-eliminator-icon" onClick={() => {setAnswerEliminator(prev => !prev)}}>
                         {answerEliminator ? <AnswerEliminatorIconSelected /> : <AnswerEliminatorIconUnselected /> }

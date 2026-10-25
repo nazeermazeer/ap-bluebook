@@ -159,7 +159,7 @@ main {
     margin-right: 5px;
 }
 
-.answer-eliminator-icon {
+.review-icon, .answer-eliminator-icon {
     display: flex;
     background: none;
     color: inherit;
