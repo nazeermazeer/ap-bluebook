@@ -1,5 +1,5 @@
 import "./mcq-layout.css";
-import {ReviewIconUnselected, AnswerEliminatorIconSelected, AnswerEliminatorIconUnselected} from "./icons.tsx";
+import {ReviewIconUnselected, ReviewIconSelected, AnswerEliminatorIconSelected, AnswerEliminatorIconUnselected} from "./icons.tsx";
 import {getQuestionData} from "./data.tsx";
 import { useState } from "react";
 
@@ -12,6 +12,8 @@ export default function MCQ_Layout() {
     const [timerHidden, setTimerHidden] = useState(false);
 
     const [answerEliminator, setAnswerEliminator] = useState(true);
+
+    const [markForReview, setMarkForReview] = useState(false);
 
     return (
         <>
@@ -27,8 +29,8 @@ export default function MCQ_Layout() {
             <div className="questions">
                 <div className="toolbar">
                     <p>{data["number"]}</p>
-                    <button className="review-icon">
-                        <ReviewIconUnselected />
+                    <button className="review-icon" onClick={() => {setMarkForReview(prev => !prev)}}>
+                        {markForReview ? <ReviewIconSelected /> : <ReviewIconUnselected />}
                     </button>
                     <p>Mark for Review</p>
                     <button className="answer-eliminator-icon" onClick={() => {setAnswerEliminator(prev => !prev)}}>
