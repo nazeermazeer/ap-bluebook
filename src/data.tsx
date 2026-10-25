@@ -19,7 +19,7 @@ const question: Question[] = [
     }, {
         number: 3,
         question: "The most valuable method for understanding demographic changes in the U.S. is the",
-        options: ["Statistical Abstract of the United States", "Reesult of public opinion polling", "Census", "Turnout in presidential elections", "Internal Revenue Service Statistical Tax Abstract"],
+        options: ["Statistical Abstract of the United States", "Result of public opinion polling", "Census", "Turnout in presidential elections", "Internal Revenue Service Statistical Tax Abstract"],
         correctAnswerIndex: 2
     }
 ]
