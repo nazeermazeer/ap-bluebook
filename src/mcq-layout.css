@@ -309,4 +309,5 @@ footer {
     border: 0px;
     border-radius: 30px;
     font-size: 18px;
+    cursor: pointer;
 }
