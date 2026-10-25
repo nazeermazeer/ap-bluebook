@@ -158,7 +158,16 @@ main {
     margin-right: 5px;
 }
 
-.answer-eliminator-icon-selected, .answer-eliminator-icon-unselected {
+.answer-eliminator-icon {
+    display: flex;
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.answer-eliminator-icon, .answer-eliminator-icon-selected, .answer-eliminator-icon-unselected {
     margin-left: auto;
     margin-right: 5px;
 }

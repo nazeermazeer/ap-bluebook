@@ -27,7 +27,9 @@ export default function MCQ_Layout() {
                     <p>{data["number"]}</p>
                     <ReviewIcon />
                     <p>Mark for Review</p>
-                    <AnswerEliminatorIconSelected />
+                    <button className="answer-eliminator-icon">
+                        <AnswerEliminatorIconSelected />
+                    </button>
                 </div>
                 <div className="toolbar-border"></div>
                     <p className="question">{data["question"]}</p>
