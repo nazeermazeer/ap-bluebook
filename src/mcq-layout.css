@@ -187,9 +187,14 @@ main {
     margin-bottom: 20px;
 }
 
-.answer-choices {
+.answer-choices-with-eliminators {
     display: grid;
     grid-template-columns: 90% 10%;
+}
+
+.answer-choices-without-eliminators {
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 

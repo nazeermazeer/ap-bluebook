@@ -35,12 +35,12 @@ export default function MCQ_Layout() {
                 </div>
                 <div className="toolbar-border"></div>
                     <p className="question">{data["question"]}</p>
-                <div className="answer-choices">
-                    <button className="answer"><span className="answer-bubble">A</span>{data["options"][0]}</button><span className="answer-eliminator">A</span>
-                    <button className="answer"><span className="answer-bubble">B</span>{data["options"][1]}</button><span className="answer-eliminator">B</span>
-                    <button className="answer"><span className="answer-bubble">C</span>{data["options"][2]}</button><span className="answer-eliminator">C</span>
-                    <button className="answer"><span className="answer-bubble">D</span>{data["options"][3]}</button><span className="answer-eliminator">D</span>
-                    <button className="answer"><span className="answer-bubble">E</span>{data["options"][4]}</button><span className="answer-eliminator">E</span>
+                <div className={answerEliminator ? "answer-choices-with-eliminators" : "answer-choices-without-eliminators"}>
+                    <button className="answer"><span className="answer-bubble">A</span>{data["options"][0]}</button>{answerEliminator && <span className="answer-eliminator">A</span>}
+                    <button className="answer"><span className="answer-bubble">B</span>{data["options"][1]}</button>{answerEliminator && <span className="answer-eliminator">B</span>}
+                    <button className="answer"><span className="answer-bubble">C</span>{data["options"][2]}</button>{answerEliminator && <span className="answer-eliminator">C</span>}
+                    <button className="answer"><span className="answer-bubble">D</span>{data["options"][3]}</button>{answerEliminator && <span className="answer-eliminator">D</span>}
+                    <button className="answer"><span className="answer-bubble">E</span>{data["options"][4]}</button>{answerEliminator && <span className="answer-eliminator">E</span>}
                 </div>
             </div>
         </main>
