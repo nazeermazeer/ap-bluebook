@@ -44,19 +44,19 @@ export default function MCQ_Layout() {
                 <div className={answerEliminator ? "answer-choices-with-eliminators" : "answer-choices-without-eliminators"}>
                     <button className={answersEliminated.a == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">A</span>{data["options"][0]}
-                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: true, b: false, c: false, d: false, e: false})}>A</button>}
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, a: !prev.a}))}>A</button>}
                     <button className={answersEliminated.b == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">B</span>{data["options"][1]}
-                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: true, c: false, d: false, e: false})}>B</button>}
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, b: !prev.b}))}>B</button>}
                     <button className={answersEliminated.c == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">C</span>{data["options"][2]}
-                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: false, c: true, d: false, e: false})}>C</button>}
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, c: !prev.c}))}>C</button>}
                     <button className={answersEliminated.d == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">D</span>{data["options"][3]}
-                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: false, c: false, d: true, e: false})}>D</button>}
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, d: !prev.d}))}>D</button>}
                     <button className={answersEliminated.e == true ? "answer-eliminated" : "answer"}>
                         <span className="answer-bubble">E</span>{data["options"][4]}
-                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated({a: false, b: false, c: false, d: false, e: true})}>E</button>}
+                    </button>{answerEliminator && <button className="answer-eliminator" onClick={() => setAnswersEliminated(prev => ({...prev, e: !prev.e}))}>E</button>}
                 </div>
             </div>
         </main>
