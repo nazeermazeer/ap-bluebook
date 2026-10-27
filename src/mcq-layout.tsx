@@ -10,14 +10,10 @@ export default function MCQ_Layout() {
     let data = getQuestionData()[question];
 
     const [timerHidden, setTimerHidden] = useState(false);
-
-    const [answerEliminator, setAnswerEliminator] = useState(true);
-
-    const [answersEliminated, setAnswersEliminated] = useState({ a: false, b: false, c: false, d: false, e: false});
-
     const [markForReview, setMarkForReview] = useState(false);
-
     const [selectedAnswer, setSelectedAnswer] = useState(-1);
+    const [answerEliminator, setAnswerEliminator] = useState(true);
+    const [answersEliminated, setAnswersEliminated] = useState({ a: false, b: false, c: false, d: false, e: false});
 
     return (
         <>
