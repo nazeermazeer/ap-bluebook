@@ -212,6 +212,20 @@ main {
     text-align: left;
 }
 
+.answer-selected {
+    font-family: 'NotoSerif', sans-serif;
+    font-size: 16px;
+    background-color: #fefefe;
+    border: 4px solid #324cc0;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
 .answer-eliminated {
     font-family: 'NotoSerif', sans-serif;
     font-size: 16px;
@@ -227,7 +241,7 @@ main {
 }
 
 
-.answer-bubble {
+.answer-bubble-deselected {
     font-family: "Roboto";
     font-weight: 600;
     display: inline-block;
@@ -237,6 +251,22 @@ main {
     height: 30px;
     border: 2px solid #444444;
     color: #444444;
+    padding: 3px 8px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.answer-bubble-selected {
+    font-family: "Roboto";
+    font-weight: 600;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #444444;
+    color: #f0f0f0;
+    background-color: #324cc0;
     padding: 3px 8px;
     border-radius: 50%;
     margin-right: 17px;
