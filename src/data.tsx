@@ -21,6 +21,11 @@ const question: Question[] = [
         question: "The most valuable method for understanding demographic changes in the U.S. is the",
         options: ["Statistical Abstract of the United States", "Result of public opinion polling", "Census", "Turnout in presidential elections", "Internal Revenue Service Statistical Tax Abstract"],
         correctAnswerIndex: 2
+    }, {
+        number: 4,
+        question: "Which of the following answer choices is correct?",
+        options: ["This answer is correct", "This answer is not correct", "Answer B and E is not telling the truth", "Answer A and C is not telling the truth", "None of them are telling the truth"],
+        correctAnswerIndex: -1
     }
 ]
 
