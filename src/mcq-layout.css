@@ -286,6 +286,7 @@ main {
     margin-top: 10px;
     margin-left: 23px;
     position: relative;
+    cursor: pointer;
 }
 
 .answer-eliminator-undo {
@@ -300,6 +301,7 @@ main {
     align-items: center;
     margin-bottom: 15px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .answer-eliminator::after {
