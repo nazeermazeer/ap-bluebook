@@ -184,9 +184,10 @@ main {
     background-repeat: repeat-x;
 }
 
-.question, .question.fade-out, .question.fade-in {
+.question {
     color: #000000;
     margin-bottom: 20px;
+    width: 700px;
 }
 
 .question.fade-out {
