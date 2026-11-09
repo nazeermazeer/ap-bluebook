@@ -399,4 +399,5 @@ footer {
 
 .nav-question-deselected {
     background-color: #444444;
+    cursor: no-drop;
 }
