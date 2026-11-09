@@ -50,7 +50,7 @@ export default function MCQ_Layout() {
         </header>
 
         <main>
-            <div className={`question-animation ${animation}`} onAnimationEnd={handleAnimationEnd}>
+            <div className={`question ${animation}`} onAnimationEnd={handleAnimationEnd}>
                     <div className="toolbar">
                         <p>{data["number"]}</p>
                         <button className="review-icon" onClick={() => {setMarkForReview(prev => !prev)}}>
