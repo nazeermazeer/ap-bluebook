@@ -113,7 +113,9 @@ export default function MCQ_Layout() {
             ) : (
                 <button className="nav-question" style={{visibility : 'hidden' }}>Back</button>        
             )} 
-            {data["number"] != numquestions && (
+            {animation != "idle" ? (
+                <button className="nav-question-deselected">Next</button>        
+            ) : data["number"] != numquestions && (
                 <button className="nav-question" onClick={() => changeQuestion(question + 1)}>Next</button>
             )} 
         </footer>
