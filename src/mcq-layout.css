@@ -39,24 +39,6 @@
   }
 }
 
-.question.fade-out {
-  animation: fade-out 400ms ease-in forwards;
-}
-
-.question.fade-in {
-  animation: fade-in 400ms ease-out forwards;
-}
-
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 header {
     font-family: 'Roboto';
     font-weight: 500;
@@ -202,9 +184,27 @@ main {
     background-repeat: repeat-x;
 }
 
-.question {
+.question, .question.fade-out, .question.fade-in {
     color: #000000;
     margin-bottom: 20px;
+}
+
+.question.fade-out {
+  animation: fade-out 200ms ease-in forwards;
+}
+
+.question.fade-in {
+  animation: fade-in 200ms ease-out forwards;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .answer-choices-with-eliminators {
