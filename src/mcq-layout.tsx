@@ -16,23 +16,24 @@ export default function MCQ_Layout() {
     const [answersEliminated, setAnswersEliminated] = useState({ a: false, b: false, c: false, d: false, e: false});
 
     const [pendingQuestion, setPendingQuestion] = useState<number | null>(null);
-    const [phase, setPhase] = useState<"idle" | "fade-out" | "fade-in">("idle");
+    const [animation, setAnimation] = useState<"idle" | "fade-out" | "fade-in">("idle");
 
     function changeQuestion(nextQuestion: number) {
-        if (phase !== "idle") return;
-        setPendingQuestion(nextQuestion);
-        setPhase("fade-out");
+        if (animation == "idle") {
+            setPendingQuestion(nextQuestion);
+            setAnimation("fade-out");
+        }
     }
 
     function handleAnimationEnd(event: React.AnimationEvent<HTMLDivElement>) {
         if (event.currentTarget !== event.target) return;
 
-        if (phase === "fade-out" && pendingQuestion !== null) {
+        if (animation == "fade-out" && pendingQuestion != null) {
             setQuestion(pendingQuestion);
             setPendingQuestion(null);
-            setPhase("fade-in");
-        } else if (phase === "fade-in") {
-            setPhase("idle");
+            setAnimation("fade-in");
+        } else if (animation == "fade-in") {
+            setAnimation("idle");
         }
     }
 
@@ -49,7 +50,7 @@ export default function MCQ_Layout() {
         </header>
 
         <main>
-            <div className={`question-animation ${phase}`} onAnimationEnd={handleAnimationEnd}>
+            <div className={`question-animation ${animation}`} onAnimationEnd={handleAnimationEnd}>
                     <div className="toolbar">
                         <p>{data["number"]}</p>
                         <button className="review-icon" onClick={() => {setMarkForReview(prev => !prev)}}>
