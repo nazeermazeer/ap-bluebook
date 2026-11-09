@@ -141,7 +141,7 @@ main {
 
 .questions {
     width: 700px;
-    animation: fade-in 400ms ease-in-out;
+    animation: fade-in 200ms ease-in-out;
 }
 
 .toolbar {
