@@ -39,10 +39,6 @@
   }
 }
 
-.question-animation {
-  animation: fade-in 400ms ease-in-out;
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -145,6 +141,7 @@ main {
 
 .questions {
     width: 700px;
+    animation: fade-in 400ms ease-in-out;
 }
 
 .toolbar {

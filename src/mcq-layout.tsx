@@ -27,8 +27,7 @@ export default function MCQ_Layout() {
         </header>
 
         <main>
-            <div className="questions">
-                <div key={question} className="question-animation">
+            <div key={question} className="questions">
                     <div className="toolbar">
                         <p>{data["number"]}</p>
                         <button className="review-icon" onClick={() => {setMarkForReview(prev => !prev)}}>
@@ -80,7 +79,6 @@ export default function MCQ_Layout() {
                         </button>}
                     </div>
                 </div>
-            </div>
         </main>
         <footer>
             <h2 className="name">Jane Doe</h2>
