@@ -39,12 +39,16 @@
   }
 }
 
-@keyframes fade-in {
-  from {
+@keyframes fade-in-out {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
     opacity: 0;
   }
 
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -141,7 +145,7 @@ main {
 
 .questions {
     width: 700px;
-    animation: fade-in 200ms ease-in-out;
+    animation: fade-in-out 300ms ease-in-out;
 }
 
 .toolbar {
