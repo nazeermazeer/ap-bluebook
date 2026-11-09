@@ -106,7 +106,9 @@ export default function MCQ_Layout() {
         <footer>
             <h2 className="name">Jane Doe</h2>
             <h2 className="totals">Question {question + 1} of {numquestions}</h2>
-            {data["number"] != 1 ? (
+            {animation != "idle" ? (
+                <button className="nav-question-deselected">Back</button>        
+            ) : data["number"] != 1 ? (
                 <button className="nav-question" onClick={() => changeQuestion(question - 1)}>Back</button>
             ) : (
                 <button className="nav-question" style={{visibility : 'hidden' }}>Back</button>        

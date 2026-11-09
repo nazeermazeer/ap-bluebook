@@ -378,7 +378,7 @@ footer {
     border-radius: 10px;
 }
 
-.nav-question {
+.nav-question, .nav-question-deselected {
     font-family: "Roboto";
     font-weight: 500;
     background-color: #324dc7;
@@ -391,5 +391,12 @@ footer {
     border: 0px;
     border-radius: 30px;
     font-size: 18px;
+}
+
+.nav-question {
     cursor: pointer;
+}
+
+.nav-question-deselected {
+    background-color: #444444;
 }
