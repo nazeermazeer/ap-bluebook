@@ -39,18 +39,22 @@
   }
 }
 
-@keyframes fade-in-out {
-  0% {
-    opacity: 1;
-  }
+.question-animation.fade-out {
+  animation: fade-out 400ms ease-in forwards;
+}
 
-  50% {
-    opacity: 0;
-  }
+.question-animation.fade-in {
+  animation: fade-in 400ms ease-out forwards;
+}
 
-  100% {
-    opacity: 1;
-  }
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 header {
@@ -145,7 +149,7 @@ main {
 
 .questions {
     width: 700px;
-    animation: fade-in-out 300ms ease-in-out;
+    /* animation: fade-in-out 300ms ease-in-out; */
 }
 
 .toolbar {

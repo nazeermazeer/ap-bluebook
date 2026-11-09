@@ -15,6 +15,28 @@ export default function MCQ_Layout() {
     const [answerEliminator, setAnswerEliminator] = useState(true);
     const [answersEliminated, setAnswersEliminated] = useState({ a: false, b: false, c: false, d: false, e: false});
 
+    const [pendingQuestion, setPendingQuestion] = useState<number | null>(null);
+    const [phase, setPhase] = useState<"idle" | "fade-out" | "fade-in">("idle");
+
+    function changeQuestion(nextQuestion: number) {
+        if (phase !== "idle") return;
+        setPendingQuestion(nextQuestion);
+        setPhase("fade-out");
+    }
+
+    function handleAnimationEnd(event: React.AnimationEvent<HTMLDivElement>) {
+        if (event.currentTarget !== event.target) return;
+
+        if (phase === "fade-out" && pendingQuestion !== null) {
+            setQuestion(pendingQuestion);
+            setPendingQuestion(null);
+            setPhase("fade-in");
+        } else if (phase === "fade-in") {
+            setPhase("idle");
+        }
+    }
+
+
     return (
         <>
         <header>
@@ -27,7 +49,7 @@ export default function MCQ_Layout() {
         </header>
 
         <main>
-            <div key={question} className="questions">
+            <div className={`question-animation ${phase}`} onAnimationEnd={handleAnimationEnd}>
                     <div className="toolbar">
                         <p>{data["number"]}</p>
                         <button className="review-icon" onClick={() => {setMarkForReview(prev => !prev)}}>
@@ -84,12 +106,12 @@ export default function MCQ_Layout() {
             <h2 className="name">Jane Doe</h2>
             <h2 className="totals">Question {question + 1} of {numquestions}</h2>
             {data["number"] != 1 ? (
-                <button className="nav-question" onClick={() => setQuestion(question - 1)}>Back</button>
+                <button className="nav-question" onClick={() => changeQuestion(question - 1)}>Back</button>
             ) : (
                 <button className="nav-question" style={{visibility : 'hidden' }}>Back</button>        
             )} 
             {data["number"] != numquestions && (
-                <button className="nav-question" onClick={() => setQuestion(question + 1)}>Next</button>
+                <button className="nav-question" onClick={() => changeQuestion(question + 1)}>Next</button>
             )} 
         </footer>
         </>
