@@ -1,8 +1,9 @@
 interface Question {
-    number: number;
-    question: string;
-    options: string[];
-    correctAnswerIndex: number;
+    readonly number: number;
+    readonly question: string;
+    readonly options: string[];
+    readonly correctAnswerIndex: number;
+    selected?: number;
 }
 
 const question: Question[] = [

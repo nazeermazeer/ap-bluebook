@@ -35,6 +35,12 @@ export default function MCQ_Layout() {
         } else if (animation == "fade-in") {
             setAnimation("idle");
         }
+
+        if (data.selected != null) {
+            setSelectedAnswer(data.selected);
+        } else {
+            setSelectedAnswer(-1);
+        }
     }
 
 
@@ -65,28 +71,28 @@ export default function MCQ_Layout() {
                 <p className="question">{data["question"]}</p>
 
                 <div className={answerEliminator ? "answer-choices-with-eliminators" : "answer-choices-without-eliminators"}>
-                    <button className={answersEliminated.a == true ? ("answer-eliminated") : selectedAnswer == 0 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.a == false) {setSelectedAnswer(0)}}}>
+                    <button className={answersEliminated.a == true ? ("answer-eliminated") : selectedAnswer == 0 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.a == false) {setSelectedAnswer(0); data.selected = 0}}}>
                         <span className={selectedAnswer == 0 ? "answer-bubble-selected" : "answer-bubble-deselected"}>A</span>{data["options"][0]}
                     </button>{answerEliminator && 
                         <button className={answersEliminated.a == true ? "answer-eliminator-undo" : "answer-eliminator"} 
-                        onClick={() => {setAnswersEliminated(prev => ({...prev, a: !prev.a})); if (selectedAnswer == 0) {setSelectedAnswer(-1)}}}>{answersEliminated.a == true ? "Undo" : "A"}
+                        onClick={() => {setAnswersEliminated(prev => ({...prev, a: !prev.a})); if (selectedAnswer == 0) {setSelectedAnswer(-1);}}}>{answersEliminated.a == true ? "Undo" : "A"}
                     </button>}
                     
-                    <button className={answersEliminated.b == true ? ("answer-eliminated") : selectedAnswer == 1 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.b == false) {setSelectedAnswer(1)}}}>
+                    <button className={answersEliminated.b == true ? ("answer-eliminated") : selectedAnswer == 1 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.b == false) {setSelectedAnswer(1); data.selected = 1}}}>
                         <span className={selectedAnswer == 1 ? "answer-bubble-selected" : "answer-bubble-deselected"}>B</span>{data["options"][1]}
                     </button>{answerEliminator && 
                         <button className={answersEliminated.b == true ? "answer-eliminator-undo" : "answer-eliminator"} 
                         onClick={() => {setAnswersEliminated(prev => ({...prev, b: !prev.b})); if (selectedAnswer == 1) {setSelectedAnswer(-1)}}}>{answersEliminated.b == true ? "Undo" : "B"}
                     </button>}
 
-                    <button className={answersEliminated.c == true ? ("answer-eliminated") : selectedAnswer == 2 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.c == false) {setSelectedAnswer(2)}}}>
+                    <button className={answersEliminated.c == true ? ("answer-eliminated") : selectedAnswer == 2 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.c == false) {setSelectedAnswer(2); data.selected = 2}}}>
                         <span className={selectedAnswer == 2 ? "answer-bubble-selected" : "answer-bubble-deselected"}>C</span>{data["options"][2]}
                     </button>{answerEliminator && 
                         <button className={answersEliminated.c == true ? "answer-eliminator-undo" : "answer-eliminator"} 
                         onClick={() => {setAnswersEliminated(prev => ({...prev, c: !prev.c})); if (selectedAnswer == 2) {setSelectedAnswer(-1)}}}>{answersEliminated.c == true ? "Undo" : "C"}
                     </button>}
 
-                    <button className={answersEliminated.d == true ? ("answer-eliminated") : selectedAnswer == 3 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.d == false) {setSelectedAnswer(3)}}}>
+                    <button className={answersEliminated.d == true ? ("answer-eliminated") : selectedAnswer == 3 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.d == false) {setSelectedAnswer(3); data.selected = 3}}}>
                         <span className={selectedAnswer == 3 ? "answer-bubble-selected" : "answer-bubble-deselected"}>D</span>{data["options"][3]}
                     </button>{answerEliminator && 
                         <button className={answersEliminated.d == true ? "answer-eliminator-undo" : "answer-eliminator"} 
@@ -94,7 +100,7 @@ export default function MCQ_Layout() {
                     </button>}
 
 
-                    <button className={answersEliminated.e == true ? ("answer-eliminated") : selectedAnswer == 4 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.e == false) { setSelectedAnswer(4)}}}>
+                    <button className={answersEliminated.e == true ? ("answer-eliminated") : selectedAnswer == 4 ? ("answer-selected") : "answer"} onClick={() => {if (answersEliminated.e == false) { setSelectedAnswer(4); data.selected = 4}}}>
                         <span className={selectedAnswer == 4 ? "answer-bubble-selected" : "answer-bubble-deselected"}>E</span>{data["options"][4]}
                     </button>{answerEliminator && 
                         <button className={answersEliminated.e == true ? "answer-eliminator-undo" : "answer-eliminator"} 
