@@ -45,12 +45,19 @@ export default function MCQ_Layout() {
             } else {
                 setAnswersEliminated({ a: false, b: false, c: false, d: false, e: false})
             }
+
+            if (data.review != null) {
+                setMarkForReview(data.review);
+            } else {
+                setMarkForReview(false);
+            }
         } else if (animation == "fade-in") {
             setAnimation("idle");
         }
     }
 
     data.eliminated = answersEliminated
+    data.review = markForReview
 
 
     return (

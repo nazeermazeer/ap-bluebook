@@ -3,6 +3,7 @@ interface Question {
     readonly question: string;
     readonly options: string[];
     readonly correctAnswerIndex: number;
+    review?: boolean;
     selected?: number;
     eliminated?: {a: boolean, b: boolean, c: boolean, d: boolean, e: boolean};
 }
