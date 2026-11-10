@@ -56,8 +56,8 @@ export default function MCQ_Layout() {
         }
     }
 
-    data.eliminated = answersEliminated
-    data.review = markForReview
+    data.eliminated = answersEliminated;
+    data.review = markForReview;
 
 
     return (

@@ -376,6 +376,7 @@ footer {
     color: #f0f0f0;
     justify-self: center; 
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .nav-question, .nav-question-deselected {
