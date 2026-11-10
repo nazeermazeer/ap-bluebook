@@ -32,14 +32,15 @@ export default function MCQ_Layout() {
             setQuestion(pendingQuestion);
             setPendingQuestion(null);
             setAnimation("fade-in");
+
+            data = getQuestionData()[pendingQuestion];
+            if (data.selected != null) {
+                setSelectedAnswer(data.selected);
+            } else {
+                setSelectedAnswer(-1);
+            }
         } else if (animation == "fade-in") {
             setAnimation("idle");
-        }
-
-        if (data.selected != null) {
-            setSelectedAnswer(data.selected);
-        } else {
-            setSelectedAnswer(-1);
         }
     }
 
