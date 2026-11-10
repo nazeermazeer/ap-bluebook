@@ -39,10 +39,18 @@ export default function MCQ_Layout() {
             } else {
                 setSelectedAnswer(-1);
             }
+
+            if (data.eliminated != null) {
+                setAnswersEliminated(data.eliminated);
+            } else {
+                setAnswersEliminated({ a: false, b: false, c: false, d: false, e: false})
+            }
         } else if (animation == "fade-in") {
             setAnimation("idle");
         }
     }
+
+    data.eliminated = answersEliminated
 
 
     return (

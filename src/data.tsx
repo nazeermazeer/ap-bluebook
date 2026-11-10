@@ -4,6 +4,7 @@ interface Question {
     readonly options: string[];
     readonly correctAnswerIndex: number;
     selected?: number;
+    eliminated?: {a: boolean, b: boolean, c: boolean, d: boolean, e: boolean};
 }
 
 const question: Question[] = [
